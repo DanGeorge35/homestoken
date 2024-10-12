@@ -25,7 +25,7 @@ import { retrieveLaunchParams } from "@telegram-apps/sdk";
 
 // Get user information from Telegram
 // const userInfo = TelegramWebApp.getUserInfo();
-const { initData } = retrieveLaunchParams();
+const { initDataRaw, initData } = retrieveLaunchParams();
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true); // Preloader state
@@ -153,6 +153,7 @@ const App: React.FC = () => {
       </div>
     );
   }
+  alert(initDataRaw);
   alert(initData);
   if (initData == null) {
     return <div className="screen flex justify-center">No User Found</div>;
