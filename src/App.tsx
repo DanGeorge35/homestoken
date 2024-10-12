@@ -9,7 +9,6 @@ import {
   yt,
   x,
   homesCoin,
-  vhrlogo,
   allworlds,
   a1,
   a2,
