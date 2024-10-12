@@ -25,7 +25,7 @@ import { retrieveLaunchParams } from "@telegram-apps/sdk";
 
 // Get user information from Telegram
 // const userInfo = TelegramWebApp.getUserInfo();
-const { initDataRaw, initData } = retrieveLaunchParams();
+const { initData } = retrieveLaunchParams();
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true); // Preloader state
