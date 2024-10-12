@@ -8,6 +8,7 @@ interface TelegramUser {
 
 interface WebApp {
   ready: () => void;
+  initData: { user?: TelegramUser };
   initDataUnsafe: { user?: TelegramUser };
   sendData: (data: string) => void;
 }
@@ -38,6 +39,7 @@ class TelegramWebApp {
 
   // Retrieve Telegram user information
   public getUserInfo(): TelegramUser | null {
+    alert(JSON.stringify(this.webApp?.initData));
     alert(JSON.stringify(this.webApp?.initDataUnsafe));
     return this.webApp?.initDataUnsafe?.user || null;
   }
