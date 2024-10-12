@@ -10,6 +10,13 @@ import {
   x,
   homesCoin,
   vhrlogo,
+  allworlds,
+  a1,
+  a2,
+  a3,
+  a4,
+  a5,
+  a6,
 } from "./images";
 
 const App: React.FC = () => {
@@ -237,7 +244,7 @@ const App: React.FC = () => {
                   VHR WORLDS
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={allworlds}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -271,10 +278,10 @@ const App: React.FC = () => {
             <div className="text-center  justify-center">
               <div className="inline-block" style={{ width: "80%" }}>
                 <div className="relative z-10 text-black text-3xl">
-                  VHR WORLDS
+                  Peaceful Nature
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={a1}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -283,12 +290,10 @@ const App: React.FC = () => {
             </div>
             <br />
             <div className="text-black p-4 text-justify text-xs ">
-              Enter the VHR Metaverse, where 6 vibrant worlds awaits you nestled
-              in a unique environment, led by a dynamic chief. Join the one that
-              resonates with your nature and give you your desired revenue per
-              hour. From adventure to serenity, choose your perfect fit and
-              become part of a thriving community, united under the visionary
-              leadership of the Head of Chiefs!
+              The peaceful world are signified with the positivity and promising
+              features of the VHR. They are not attracted to fuders or anything
+              pessimistic Citizens in this Metaverse, they value Peace and
+              Cleanliness , They are Calm and FUD free. Revenue per hour = 100
             </div>
 
             <div
@@ -305,9 +310,7 @@ const App: React.FC = () => {
               >
                 <b className="px-5">Prev</b>
               </div>
-              <div className="pt-3 text-black text-center">
-                {world} of 6 worlds
-              </div>
+              <div className="pt-3 text-black text-center">{world} / 6</div>
               <div
                 className="p-4 dbtn_gold"
                 onClick={() => handleWorldClick(world + 1)}
@@ -329,10 +332,10 @@ const App: React.FC = () => {
             <div className="text-center  justify-center">
               <div className="inline-block" style={{ width: "80%" }}>
                 <div className="relative z-10 text-black text-3xl">
-                  VHR WORLDS
+                  Royal Nature
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={a2}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -341,12 +344,10 @@ const App: React.FC = () => {
             </div>
             <br />
             <div className="text-black p-4 text-justify text-xs ">
-              Enter the VHR Metaverse, where 6 vibrant worlds awaits you nestled
-              in a unique environment, led by a dynamic chief. Join the one that
-              resonates with your nature and give you your desired revenue per
-              hour. From adventure to serenity, choose your perfect fit and
-              become part of a thriving community, united under the visionary
-              leadership of the Head of Chiefs!
+              Citizens here are Dignified and filled with wisdom to uncover Blue
+              Chip infrastructure in VHR metaverse. They are ever ready to share
+              the knowledge about their findings with deep understanding.
+              Revenue per hour = 100
             </div>
 
             <div
@@ -363,9 +364,7 @@ const App: React.FC = () => {
               >
                 <b className="px-5">Prev</b>
               </div>
-              <div className="pt-3 text-black text-center">
-                {world} of 6 worlds
-              </div>
+              <div className="pt-3 text-black text-center">{world} / 6</div>
               <div
                 className="p-4 dbtn_gold"
                 onClick={() => handleWorldClick(world + 1)}
@@ -387,10 +386,10 @@ const App: React.FC = () => {
             <div className="text-center  justify-center">
               <div className="inline-block" style={{ width: "80%" }}>
                 <div className="relative z-10 text-black text-3xl">
-                  VHR WORLDS
+                  Dynasty Nature
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={a3}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -399,12 +398,11 @@ const App: React.FC = () => {
             </div>
             <br />
             <div className="text-black p-4 text-justify text-xs ">
-              Enter the VHR Metaverse, where 6 vibrant worlds awaits you nestled
-              in a unique environment, led by a dynamic chief. Join the one that
-              resonates with your nature and give you your desired revenue per
-              hour. From adventure to serenity, choose your perfect fit and
-              become part of a thriving community, united under the visionary
-              leadership of the Head of Chiefs!
+              Citizens here are very optimistic, self-reliant and clever. They
+              love to bring people together that is why they seek to project
+              with like Minds in the VHR Metaverse. They are also rich in Crypto
+              wealth. That is why they are called the whales of VHR Metaverse.
+              Revenue per hour = 100
             </div>
 
             <div
@@ -421,9 +419,7 @@ const App: React.FC = () => {
               >
                 <b className="px-5">Prev</b>
               </div>
-              <div className="pt-3 text-black text-center">
-                {world} of 6 worlds
-              </div>
+              <div className="pt-3 text-black text-center">{world} / 6</div>
               <div
                 className="p-4 dbtn_gold"
                 onClick={() => handleWorldClick(world + 1)}
@@ -445,10 +441,10 @@ const App: React.FC = () => {
             <div className="text-center  justify-center">
               <div className="inline-block" style={{ width: "80%" }}>
                 <div className="relative z-10 text-black text-3xl">
-                  VHR WORLDS
+                  Fertile Nature
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={a4}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -457,12 +453,10 @@ const App: React.FC = () => {
             </div>
             <br />
             <div className="text-black p-4 text-justify text-xs ">
-              Enter the VHR Metaverse, where 6 vibrant worlds awaits you nestled
-              in a unique environment, led by a dynamic chief. Join the one that
-              resonates with your nature and give you your desired revenue per
-              hour. From adventure to serenity, choose your perfect fit and
-              become part of a thriving community, united under the visionary
-              leadership of the Head of Chiefs!
+              Citizens in this Metaverse are Trustworthy and very futuristic.
+              They value Growth, Prosperity and Renewal. They are fully aware of
+              the vision of VHR and this is what fuels their loyalty. Revenue
+              per hour = 100
             </div>
 
             <div
@@ -479,9 +473,7 @@ const App: React.FC = () => {
               >
                 <b className="px-5">Prev</b>
               </div>
-              <div className="pt-3 text-black text-center">
-                {world} of 6 worlds
-              </div>
+              <div className="pt-3 text-black text-center">{world} / 6</div>
               <div
                 className="p-4 dbtn_gold"
                 onClick={() => handleWorldClick(world + 1)}
@@ -503,10 +495,10 @@ const App: React.FC = () => {
             <div className="text-center  justify-center">
               <div className="inline-block" style={{ width: "80%" }}>
                 <div className="relative z-10 text-black text-3xl">
-                  VHR WORLDS
+                  Empire Nature
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={a5}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -515,12 +507,9 @@ const App: React.FC = () => {
             </div>
             <br />
             <div className="text-black p-4 text-justify text-xs ">
-              Enter the VHR Metaverse, where 6 vibrant worlds awaits you nestled
-              in a unique environment, led by a dynamic chief. Join the one that
-              resonates with your nature and give you your desired revenue per
-              hour. From adventure to serenity, choose your perfect fit and
-              become part of a thriving community, united under the visionary
-              leadership of the Head of Chiefs!
+              Citizens in this Metaverse are filled with Energy and passion
+              towards VHR citizens. They love everyone that is why they are so
+              eager to protect their Metaverse. Revenue per hour = 100
             </div>
 
             <div
@@ -537,9 +526,7 @@ const App: React.FC = () => {
               >
                 <b className="px-5">Prev</b>
               </div>
-              <div className="pt-3 text-black text-center">
-                {world} of 6 worlds
-              </div>
+              <div className="pt-3 text-black text-center">{world} / 6</div>
               <div
                 className="p-4 dbtn_gold"
                 onClick={() => handleWorldClick(world + 1)}
@@ -561,10 +548,10 @@ const App: React.FC = () => {
             <div className="text-center  justify-center">
               <div className="inline-block" style={{ width: "80%" }}>
                 <div className="relative z-10 text-black text-3xl">
-                  VHR WORLDS
+                  Terrain Nature
                 </div>
                 <img
-                  src={vhrlogo}
+                  src={a6}
                   alt="vhr"
                   className="inline-block mt-8 "
                   style={{ width: "80%" }}
@@ -573,12 +560,10 @@ const App: React.FC = () => {
             </div>
             <br />
             <div className="text-black p-4 text-justify text-xs ">
-              Enter the VHR Metaverse, where 6 vibrant worlds awaits you nestled
-              in a unique environment, led by a dynamic chief. Join the one that
-              resonates with your nature and give you your desired revenue per
-              hour. From adventure to serenity, choose your perfect fit and
-              become part of a thriving community, united under the visionary
-              leadership of the Head of Chiefs!
+              Citizens in this Metaverse value order beauty and harmony. They
+              also like abundant space which keeps their minds at equilibrium to
+              balance the VHR Metaverse with the outside world. Revenue per hour
+              = 100
             </div>
 
             <div
@@ -595,9 +580,7 @@ const App: React.FC = () => {
               >
                 <b className="px-5">Prev</b>
               </div>
-              <div className="pt-3 text-black text-center">
-                {world} of 6 worlds
-              </div>
+              <div className="pt-3 text-black text-center">{world} / 6</div>
               <div
                 className="p-4 dbtn_gold"
                 onClick={() => handleWorldClick(6)}
