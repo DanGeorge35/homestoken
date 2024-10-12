@@ -195,7 +195,7 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-2">
+          <div className="fixed bottom-0 w-full grid grid-cols-3 gap-2">
             <div className="p-4 dbtn">
               <b>Earn</b>
             </div>
