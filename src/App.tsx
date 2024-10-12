@@ -17,6 +17,13 @@ import {
   a5,
   a6,
 } from "./images";
+import TelegramWebApp from "./TelegramWebApp";
+
+// Initialize the Telegram Web App
+TelegramWebApp.init();
+
+// Get user information from Telegram
+const userInfo = TelegramWebApp.getUserInfo();
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true); // Preloader state
@@ -145,6 +152,9 @@ const App: React.FC = () => {
     );
   }
 
+  if (userInfo == null) {
+    return <div className="screen flex justify-center">No User Found</div>;
+  }
   if (selectedWorld > 0) {
     return (
       <div className="screen flex justify-center">
@@ -158,7 +168,7 @@ const App: React.FC = () => {
                 borderRadius: "0px 0px 10px 10px",
               }}
             >
-              <span className="text-sm">Dannex</span>
+              <span className="text-sm">{userInfo.username}</span>
             </div>
             <div className="grid grid-cols-2 gap-2">
               <div className="p-4 dbtn_gold">
