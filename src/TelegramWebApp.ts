@@ -8,7 +8,7 @@ interface TelegramUser {
 
 interface WebApp {
   ready: () => void;
-  initData: { user?: TelegramUser };
+  initData: unknown;
   initDataUnsafe: { user?: TelegramUser };
   sendData: (data: string) => void;
 }
