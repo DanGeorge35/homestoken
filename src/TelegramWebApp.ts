@@ -38,6 +38,7 @@ class TelegramWebApp {
 
   // Retrieve Telegram user information
   public getUserInfo(): TelegramUser | null {
+    alert(JSON.stringify(this.webApp?.initDataUnsafe));
     return this.webApp?.initDataUnsafe?.user || null;
   }
 
