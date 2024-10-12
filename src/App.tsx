@@ -152,7 +152,7 @@ const App: React.FC = () => {
                 borderRadius: "0px 0px 10px 10px",
               }}
             >
-              <span className="text-sm">Nikandr (CEO)</span>
+              <span className="text-sm">Dannex</span>
             </div>
             <div className="grid grid-cols-2 gap-2">
               <div className="p-4 dbtn_gold">
