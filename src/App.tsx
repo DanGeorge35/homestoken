@@ -18,15 +18,16 @@ import {
   a6,
 } from "./images";
 // import TelegramWebApp from "./TelegramWebApp";
-import { retrieveLaunchParams } from "@telegram-apps/sdk";
+// import { retrieveLaunchParams } from "@telegram-apps/sdk";
+import { parse } from "@telegram-apps/init-data-node";
 
 // Initialize the Telegram Web App
 // TelegramWebApp.init();
 
 // Get user information from Telegram
 // const userInfo = TelegramWebApp.getUserInfo();
-const { initDataRaw, initData } = retrieveLaunchParams();
-
+// const { initDataRaw, initData } = retrieveLaunchParams();
+const initData = parse("...");
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true); // Preloader state
   const [world, setWorld] = useState(0);
@@ -153,7 +154,7 @@ const App: React.FC = () => {
       </div>
     );
   }
-  alert(initDataRaw);
+  // alert(initDataRaw);
   alert(initData);
   if (initData == null) {
     return <div className="screen flex justify-center">No User Found</div>;
