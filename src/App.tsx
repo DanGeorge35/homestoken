@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const [world, setWorld] = useState(0);
   const [selectedWorld, setselectWorld] = useState(0);
 
-  const [levelIndex, setLevelIndex] = useState(6);
+  // const [levelIndex, setLevelIndex] = useState(6);
   const [points, setPoints] = useState(0);
   const [clicks, setClicks] = useState<{ id: number; x: number; y: number }[]>(
     []
