@@ -153,12 +153,10 @@ const App: React.FC = () => {
       </div>
     );
   }
-
+  alert(initData);
   if (initData == null) {
     return <div className="screen flex justify-center">No User Found</div>;
   }
-
-  alert(initData);
 
   if (selectedWorld > 0) {
     return (
