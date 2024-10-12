@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+}
+.screen {
+  background-color: #9fd3cf;
+}
+.mainCharacter {
+}
+
+.dbtn,
+.dbtn_gold {
+  background-image: url(./images/button_blue.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  background-position: center;
+}
+.dbtn b {
+  display: block;
+}
+
+.dbtn_gold {
+  background-image: url(./images/button_gold.png);
+}
+
+.dbtn_gold b {
+  display: block;
+}
+small {
+  font-size: 10px;
+  color: black;
+}
