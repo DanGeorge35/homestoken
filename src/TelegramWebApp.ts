@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-interface TelegramUser {
-  id: number;
-  first_name: string;
-  last_name?: string;
-  username?: string;
-  language_code?: string;
-}
+// interface TelegramUser {
+//   id: number;
+//   first_name: string;
+//   last_name?: string;
+//   username?: string;
+//   language_code?: string;
+// }
 
 interface WebApp {
   ready: () => void;
@@ -39,18 +39,9 @@ class TelegramWebApp {
   }
 
   // Retrieve Telegram user information
-  public getUserInfo(): TelegramUser | null {
+  public getUserInfo():any | null {
 
-    alert("initDataUnsafe JS");
-      alert(this.webApp?.initDataUnsafe);
-    alert(JSON.stringify(this.webApp?.initDataUnsafe));
-    alert("initData");
-    alert(JSON.stringify(this.webApp?.initData));
-    alert(this.webApp?.initData);
-
-
-
-    return this.webApp?.initDataUnsafe?.user || this.webApp?.initData?.user || null;
+    return  {initData: this.webApp?.initData , initDataUnsafe: this.webApp?.initDataUnsafe}
   }
 
   // Send data payload back to Telegram

@@ -160,10 +160,19 @@ const App: React.FC = () => {
   // alert(initDataRaw);
 
   const userInfo = TelegramWebApp.getUserInfo() || null;
-  alert(userInfo);
-  if (userInfo == null) {
-    return <div className="screen flex justify-center">No User Found</div>;
-  }
+
+  return (
+    <div className="screen flex justify-center">
+      userInfo: {userInfo}
+      <br />
+      userInfo: {JSON.stringify(userInfo)}
+      <br />
+      userInfo: {JSON.stringify(userInfo.initData)}
+      <br />
+      userInfo: {JSON.stringify(userInfo.initDataUnsafe)}
+      <br />
+    </div>
+  );
 
   if (selectedWorld > 0) {
     return (
