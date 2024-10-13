@@ -161,18 +161,18 @@ const App: React.FC = () => {
 
   const userInfo = TelegramWebApp.getUserInfo() || null;
 
-  return (
-    <div className="screen flex justify-center">
-      userInfo: {userInfo}
-      <br />
-      userInfo JS: {JSON.stringify(userInfo)}
-      <br />
-      initData: {JSON.stringify(userInfo.initData)}
-      <br />
-      initDataUnsafe: {JSON.stringify(userInfo.initDataUnsafe)}
-      <br />
-    </div>
-  );
+  // return (
+  //   <div className="screen flex justify-center">
+  //     userInfo: {userInfo}
+  //     <br />
+  //     userInfo JS: {JSON.stringify(userInfo)}
+  //     <br />
+  //     initData: {JSON.stringify(userInfo.initData)}
+  //     <br />
+  //     initDataUnsafe: {JSON.stringify(userInfo.initDataUnsafe)}
+  //     <br />
+  //   </div>
+  // );
 
   if (selectedWorld > 0) {
     return (
@@ -187,7 +187,9 @@ const App: React.FC = () => {
                 borderRadius: "0px 0px 10px 10px",
               }}
             >
-              <span className="text-sm">{userInfo.username}</span>
+              <span className="text-sm">
+                {userInfo.initDataUnsafe.username} {userInfo.initData.username}
+              </span>
             </div>
             <div className="grid grid-cols-2 gap-2">
               <div className="p-4 dbtn_gold">
