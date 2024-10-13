@@ -40,14 +40,15 @@ class TelegramWebApp {
 
   // Retrieve Telegram user information
   public getUserInfo(): TelegramUser | null {
-    alert("initData");
-    alert(this.webApp?.initData);
-    alert("initData");
-    alert(this.webApp?.initDataUnsafe);
-    alert("initData JS");
-    alert(JSON.stringify(this.webApp?.initData));
+
     alert("initDataUnsafe JS");
+      alert(this.webApp?.initDataUnsafe);
     alert(JSON.stringify(this.webApp?.initDataUnsafe));
+    alert("initData");
+    alert(JSON.stringify(this.webApp?.initData));
+    alert(this.webApp?.initData);
+
+
 
     return this.webApp?.initDataUnsafe?.user || this.webApp?.initData?.user || null;
   }
