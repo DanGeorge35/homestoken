@@ -18,14 +18,14 @@ import {
   a6,
 } from "./images";
 import TelegramWebApp from "./TelegramWebApp";
-import { retrieveLaunchParams } from "@telegram-apps/sdk";
+// import { retrieveLaunchParams } from "@telegram-apps/sdk";
 
 // Initialize the Telegram Web App
 TelegramWebApp.init();
 
 // Get user information from Telegram
-const userInfo = TelegramWebApp.getUserInfo();
-const { initDataRaw, initData } = retrieveLaunchParams();
+
+// const { initDataRaw, initData } = retrieveLaunchParams();
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true); // Preloader state
@@ -39,6 +39,7 @@ const App: React.FC = () => {
   );
   const pointsToAdd = 11;
   const profitPerHour = 126420;
+  const userInfo = TelegramWebApp.getUserInfo();
 
   useEffect(() => {
     // Simulate a loading delay, e.g., for fetching resources
@@ -154,11 +155,11 @@ const App: React.FC = () => {
     );
   }
 
-  alert(initData);
-  alert(initDataRaw);
+  // alert(initData);
+  // alert(initDataRaw);
   alert(userInfo);
 
-  if (initData == null) {
+  if (userInfo == null) {
     return <div className="screen flex justify-center">No User Found</div>;
   }
 
@@ -175,7 +176,7 @@ const App: React.FC = () => {
                 borderRadius: "0px 0px 10px 10px",
               }}
             >
-              <span className="text-sm">{initData.user?.username}</span>
+              <span className="text-sm">{userInfo.username}</span>
             </div>
             <div className="grid grid-cols-2 gap-2">
               <div className="p-4 dbtn_gold">
