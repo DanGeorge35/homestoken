@@ -26,8 +26,6 @@ class TelegramWebApp {
   constructor() {
     if (typeof window !== 'undefined' && window.Telegram?.WebApp) {
       this.webApp = window.Telegram.WebApp;
-      alert("TelegramWebApp");
-      alert(JSON.stringify(this.webApp))
     } else {
       console.warn("Telegram Web App API is only available in browser environments.");
     }
@@ -37,17 +35,21 @@ class TelegramWebApp {
   public init(): void {
     if (this.webApp) {
       this.webApp.ready();
-      alert("ready");
     }
   }
 
   // Retrieve Telegram user information
   public getUserInfo(): TelegramUser | null {
-    alert("initData"+this.webApp?.initData);
-    alert("initDataUnsafe"+this.webApp?.initDataUnsafe);
-    alert("initData JS"+JSON.stringify(this.webApp?.initData));
-    alert("initDataUnsafe JS"+JSON.stringify(this.webApp?.initDataUnsafe));
-    return this.webApp?.initData?.user || null;
+    alert("initData");
+    alert(this.webApp?.initData);
+    alert("initData");
+    alert(this.webApp?.initDataUnsafe);
+    alert("initData JS");
+    alert(JSON.stringify(this.webApp?.initData));
+    alert("initDataUnsafe JS");
+    alert(JSON.stringify(this.webApp?.initDataUnsafe));
+
+    return this.webApp?.initDataUnsafe?.user || this.webApp?.initData?.user || null;
   }
 
   // Send data payload back to Telegram
