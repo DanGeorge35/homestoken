@@ -21,7 +21,6 @@ import TelegramWebApp from "./TelegramWebApp";
 // import { retrieveLaunchParams } from "@telegram-apps/sdk";
 
 // Initialize the Telegram Web App
-TelegramWebApp.init();
 
 // Get user information from Telegram
 
@@ -45,6 +44,7 @@ const App: React.FC = () => {
     // Simulate a loading delay, e.g., for fetching resources
     const loadTime = setTimeout(() => setLoading(false), 2000); // Set to false after 2 seconds
     return () => clearTimeout(loadTime);
+    TelegramWebApp.init();
   }, []);
 
   useEffect(() => {
