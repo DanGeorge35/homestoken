@@ -38,13 +38,13 @@ const App: React.FC = () => {
   );
   const pointsToAdd = 11;
   const profitPerHour = 126420;
+  TelegramWebApp.init();
   const userInfo = TelegramWebApp.getUserInfo();
 
   useEffect(() => {
     // Simulate a loading delay, e.g., for fetching resources
     const loadTime = setTimeout(() => setLoading(false), 2000); // Set to false after 2 seconds
     return () => clearTimeout(loadTime);
-    TelegramWebApp.init();
   }, []);
 
   useEffect(() => {
