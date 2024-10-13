@@ -165,11 +165,11 @@ const App: React.FC = () => {
     <div className="screen flex justify-center">
       userInfo: {userInfo}
       <br />
-      userInfo: {JSON.stringify(userInfo)}
+      userInfo JS: {JSON.stringify(userInfo)}
       <br />
-      userInfo: {JSON.stringify(userInfo.initData)}
+      initData: {JSON.stringify(userInfo.initData)}
       <br />
-      userInfo: {JSON.stringify(userInfo.initDataUnsafe)}
+      initDataUnsafe: {JSON.stringify(userInfo.initDataUnsafe)}
       <br />
     </div>
   );
