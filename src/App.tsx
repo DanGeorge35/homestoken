@@ -166,7 +166,8 @@ const App: React.FC = () => {
   if (webAppHandler === null) {
     alert("Telegram WebApp is not loaded.");
   }
-  const userInfo = webAppHandler?.initDataUnsafe || null;//webAppHandler?.initData
+  const userInfo =
+    webAppHandler?.initDataUnsafe ?? webAppHandler?.initData ?? null; //webAppHandler?.initData
 
   if (selectedWorld > 0) {
     return (
