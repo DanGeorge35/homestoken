@@ -39,12 +39,10 @@ const App: React.FC = () => {
   );
   const pointsToAdd = 11;
   const profitPerHour = 126420;
-  let userInfo: any;
 
   useEffect(() => {
     // Simulate a loading delay, e.g., for fetching resources
     TelegramWebApp.init();
-    userInfo = TelegramWebApp.getUserInfo() || null;
 
     const loadTime = setTimeout(() => setLoading(false), 2000); // Set to false after 2 seconds
     return () => clearTimeout(loadTime);
@@ -160,8 +158,9 @@ const App: React.FC = () => {
 
   // alert(initData);
   // alert(initDataRaw);
-  alert(userInfo);
 
+  const userInfo = TelegramWebApp.getUserInfo() || null;
+  alert(userInfo);
   if (userInfo == null) {
     return <div className="screen flex justify-center">No User Found</div>;
   }
