@@ -158,8 +158,15 @@ const App: React.FC = () => {
 
   // alert(initData);
   // alert(initDataRaw);
+  const webAppHandler =
+    typeof window !== "undefined" && window?.Telegram?.WebApp
+      ? window.Telegram.WebApp
+      : null;
 
-  const userInfo = TelegramWebApp.getUserInfo() || null;
+  if (webAppHandler === null) {
+    alert("Telegram WebApp is not loaded.");
+  }
+  const userInfo = webAppHandler?.initDataUnsafe || null;
 
   // return (
   //   <div className="screen flex justify-center">
