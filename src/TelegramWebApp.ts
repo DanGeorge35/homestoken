@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface TelegramUser {
   id: number;
   first_name: string;
@@ -8,8 +9,8 @@ interface TelegramUser {
 
 interface WebApp {
   ready: () => void;
-  initData: unknown;
-  initDataUnsafe: { user?: TelegramUser };
+  initData: any;
+  initDataUnsafe: any;
   sendData: (data: string) => void;
 }
 
@@ -25,6 +26,8 @@ class TelegramWebApp {
   constructor() {
     if (typeof window !== 'undefined' && window.Telegram?.WebApp) {
       this.webApp = window.Telegram.WebApp;
+      alert("TelegramWebApp");
+      alert(JSON.stringify(this.webApp))
     } else {
       console.warn("Telegram Web App API is only available in browser environments.");
     }
@@ -34,13 +37,16 @@ class TelegramWebApp {
   public init(): void {
     if (this.webApp) {
       this.webApp.ready();
+      alert("ready");
     }
   }
 
   // Retrieve Telegram user information
   public getUserInfo(): TelegramUser | null {
-    alert(JSON.stringify(this.webApp?.initData));
-    alert(JSON.stringify(this.webApp?.initDataUnsafe));
+    alert("initData"+this.webApp?.initData);
+    alert("initData"+this.webApp?.initDataUnsafe);
+    alert("initData JS"+JSON.stringify(this.webApp?.initData));
+    alert("initData JS"+JSON.stringify(this.webApp?.initDataUnsafe));
     return this.webApp?.initDataUnsafe?.user || null;
   }
 
