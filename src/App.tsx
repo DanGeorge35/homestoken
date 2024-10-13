@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import {
@@ -38,11 +39,13 @@ const App: React.FC = () => {
   );
   const pointsToAdd = 11;
   const profitPerHour = 126420;
-  TelegramWebApp.init();
-  const userInfo = TelegramWebApp.getUserInfo();
+  let userInfo: any;
 
   useEffect(() => {
     // Simulate a loading delay, e.g., for fetching resources
+    TelegramWebApp.init();
+    userInfo = TelegramWebApp.getUserInfo() || null;
+
     const loadTime = setTimeout(() => setLoading(false), 2000); // Set to false after 2 seconds
     return () => clearTimeout(loadTime);
   }, []);
