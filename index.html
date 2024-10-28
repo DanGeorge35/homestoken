@@ -14,20 +14,27 @@
   <script type="module" src="/src/main.tsx"></script>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
-      const user = window.Telegram.WebApp.initDataUnsafe?.user;
+      if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe) {
+        const user = window.Telegram.WebApp.initDataUnsafe?.user;
 
-      if (user) {
-        const userInfo = `
+        if (user) {
+          const userInfo = `
       Welcome, ${user.first_name}!
       Your Telegram ID: ${user.id}
       Username: ${user.username || "N/A"}
       Full Name: ${user.first_name} ${user.last_name || ""}
       Language: ${user.language_code || "not specified"}
     `;
-        alert(userInfo);
-        localStorage.setItem("User", user);
+          alert(userInfo);
+          localStorage.setItem("User", user);
+        } else {
+          alert("User information is unavailable.");
+        }
       } else {
-        alert("User information is unavailable.");
+        alert("Telegram WebApp SDK not loaded or initDataUnsafe is unavailable.");
+        alert(window.Telegram);
+        alert(window.Telegram.WebApp);
+        alert(window.Telegram.WebApp.initDataUnsafe);
       }
     });
   </script>
