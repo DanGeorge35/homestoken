@@ -26,7 +26,7 @@
 
 
       if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe) {
-        alert(JSON.stringify(Telegram.WebApp.initData.user));
+        alert(JSON.stringify(Telegram.WebApp.initData));
         const user = window.Telegram.WebApp.initDataUnsafe?.user;
 
         if (user) {
