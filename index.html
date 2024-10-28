@@ -13,7 +13,18 @@
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
   <script>
+
+
     window.addEventListener("DOMContentLoaded", () => {
+
+      if (window.Telegram && window.Telegram.WebApp) {
+        window.Telegram.WebApp.ready();
+        alert("Telegram Web App loaded successfully!");
+      } else {
+        alert("Telegram Web App not loaded!");
+      }
+
+
       if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe) {
         const user = window.Telegram.WebApp.initDataUnsafe?.user;
 
